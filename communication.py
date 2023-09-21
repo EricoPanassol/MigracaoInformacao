@@ -1,3 +1,9 @@
+# +***************************************+
+# |     Author: Érico Riess Panazzolo     |
+# |     Registration: 212012290-8         |
+# |     Date: 09/20/2023 - 10/02/2023     |
+# +***************************************+
+
 # 0: velhinha
 # 1: quantas fofocas recebeu
 # 2: lista das amigas
