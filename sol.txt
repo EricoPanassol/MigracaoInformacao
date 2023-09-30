@@ -1,0 +1,60 @@
+A : C D F I L N O
+B : C F G H I L M N O
+C : E G N
+D : B F H K M O
+E : B D F G O
+F : D E K
+G : D E K L N
+H : A C D E G J L M N O
+I : A B C E L M O
+J : B E G I K L M O
+K : B E L O
+L : A B C D E F G I K M
+M : B C G K L N
+N : A D E F G H
+O : B E F G I K N
+
+
+O sistema que vou montar é o seguinte:
+- Cada letra vai ser igual a 1 + a probabilidade de ser escolhida (não esquencedo dos 10% de chance de esquecer)
+
+A = 1 + 0.09H + 0.063I + 0.09L + 0.54N
+-1 = -A + 0.09H + 0.063I + 0.09L + 0.54N
+
+B = 1 + 0.54D + 0.45E + 0.63I + 0.72J + 0.36K + 0.09L + 0.54M + 0.63O
+-1 = -B + 0.54D + 0.45E + 0.63I + 0.72J + 0.36K + 0.09L + 0.54M + 0.63O
+
+
+
+
+
+1 : 2 
+2 : 1 3 
+3 : 1 2 
+
+1 = {0.45 - 2} + {0.45 - 3}
+2 = {0.9 - 1} + {0.45 - 3}
+3 = {0.45 - 2}
+
+Saídas de cada caso:
+caso 010 -> Velhinha 10 recebeu a MAIOR quantidade de fofocas: 13.286356
+caso 020 -> Velhinha 14 recebeu a MAIOR quantidade de fofocas: 19.774662
+caso 050 -> Velhinha 7 recebeu a MAIOR quantidade de fofocas: 25.266481
+caso 100 -> Velhinha 51 recebeu a MAIOR quantidade de fofocas: 21.933813
+caso 200 -> Velhinha 2 recebeu a MAIOR quantidade de fofocas: 27.166666
+
+
+Digite o nome do arquivo que deseja carregar: ./caso010.txt
+Velhinha 10 recebeu a maior quantidade de fofocas: 13.286356
+
+Digite o nome do arquivo que deseja carregar: ./caso020.txt
+Velhinha 14 recebeu a maior quantidade de fofocas: 19.774662
+
+Digite o nome do arquivo que deseja carregar: ./caso050.txt
+Velhinha 7 recebeu a maior quantidade de fofocas: 25.266481
+
+Digite o nome do arquivo que deseja carregar: ./caso100.txt
+Velhinha 51 recebeu a maior quantidade de fofocas: 21.933813
+
+Digite o nome do arquivo que deseja carregar: ./caso200.txt
+Velhinha 2 recebeu a maior quantidade de fofocas: 27.166666
