@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from collections import defaultdict
 
@@ -10,7 +11,22 @@ from collections import defaultdict
 
 # Seleção do arquivo
 # ====================================================================
-file = input("Digite o nome do arquivo que deseja carregar: ./")
+pasta_casos_teste = './cases'
+
+arquivos_casos_teste = os.listdir(pasta_casos_teste)
+
+print("Arquivos de casos de teste disponíveis:")
+for i, arquivo in enumerate(arquivos_casos_teste, start=1):
+    print(f"{i}: {arquivo}")
+
+numero_arquivo = int(input("Digite o número do arquivo que deseja carregar: "))
+
+if 1 <= numero_arquivo <= len(arquivos_casos_teste):
+    nome_arquivo = arquivos_casos_teste[numero_arquivo - 1]
+    file = os.path.join(pasta_casos_teste, nome_arquivo)
+    print(f"-> Você selecionou o arquivo: {nome_arquivo}\n\n")
+else:
+    print("Número de arquivo inválido. Por favor, escolha um número válido.")
  
 
 # Salva as informações dos arquivos em listas para serem manipuladas
