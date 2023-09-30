@@ -53,3 +53,20 @@ falta de memória), enquanto uma velhinha com 5 amigas tem 20% de chance (també
 Para garantir o anonimato de cada velhinha de acordo com a LGPD cada uma delas é representada por um número inteiro. Sua missão é descobrir duas informações: qual velhinha terá recebido mais fofocas durante o dia e quantas fofocas serão. Acima você tem um exemplo de arquivo que conta sobre a vida de 15 velhinhas fofoqueiras, com cada velhinha e sua lista de amigas preferidas. Outros arquivos podem ter de ser testados, por isso prepare-se para números maiores! 
 
 Ah, sim. Para garantir que seu programa pode ser rodado em qualquer outro bairro da cidade ele deve ser feito em Java, C, Python ou C++.
+
+--- 
+
+É necessário fazer a instalação da biblioteca ```numpy``` do Python.
+
+Abra seu terminal e digite:
+
+```
+pip install numpy
+```
+
+Após a instalação, basta executar o programa e descobrir qual é a velhinha mais fofoqueira do Bairro do Limoeiro.
+
+No terminal:
+```
+python3 oldLadiesInformation.py
+```
