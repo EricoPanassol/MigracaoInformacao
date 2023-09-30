@@ -11,20 +11,20 @@ from collections import defaultdict
 
 # Seleção do arquivo
 # ====================================================================
-pasta_casos_teste = './cases'
+test_cases_folder = './cases'
 
-arquivos_casos_teste = os.listdir(pasta_casos_teste)
+test_cases_files = os.listdir(test_cases_folder)
 
 print("Arquivos de casos de teste disponíveis:")
-for i, arquivo in enumerate(arquivos_casos_teste, start=1):
+for i, arquivo in enumerate(test_cases_files, start=1):
     print(f"{i}: {arquivo}")
 
-numero_arquivo = int(input("Digite o número do arquivo que deseja carregar: "))
+file_num = int(input("Digite o número do arquivo que deseja carregar: "))
 
-if 1 <= numero_arquivo <= len(arquivos_casos_teste):
-    nome_arquivo = arquivos_casos_teste[numero_arquivo - 1]
-    file = os.path.join(pasta_casos_teste, nome_arquivo)
-    print(f"-> Você selecionou o arquivo: {nome_arquivo}\n\n")
+if 1 <= file_num <= len(test_cases_files):
+    file_name = test_cases_files[file_num - 1]
+    file = os.path.join(test_cases_folder, file_name)
+    print(f"-> Você selecionou o arquivo: {file_name}\n\n")
 else:
     print("Número de arquivo inválido. Por favor, escolha um número válido.")
  
